@@ -36,5 +36,5 @@ jobs:
         git add .
         git commit -m "Deploy Jekyll site to GitHub Pages"
         
-        # Push the changes to the 'gh-pages' branch
-        git push origin gh-pages --force
+        # Authenticate and push using GITHUB_TOKEN
+        git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git gh-pages --force
