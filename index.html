@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jan - Portfolio</title>
+    <link rel="icon" href="assets/dp.jpeg" type="image/jpeg">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="js/scripts.js" defer></script>
+</head>
+<body class="bg-light dark:bg-dark text-dark dark:text-white min-h-screen flex flex-col font-['Inter'] transition-colors duration-300">
+    <div class="absolute top-8 right-8 z-10">
+        <button id="themeToggle" class="p-2 rounded-lg bg-dark dark:bg-light text-light dark:text-dark w-10 h-10 flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+            </svg>
+        </button>
+    </div>
+
+    <main class="flex-grow flex flex-col">
+        <!-- Hero Section -->
+        <section class="flex items-center justify-center min-h-screen">
+            <div class="text-center max-w-4xl mx-auto px-4">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-black mb-2 tracking-tighter leading-none text-shadow-glow-subtle">
+                    Jan Beyati <span class="font-normal"></span>
+                </h1>
+                <p class="text-xl md:text-2xl font-semibold mb-8">
+                    <span class="text-gray-600 dark:text-[#C9C9C9]">Software Engineer </span>
+                </p>
+
+                <!-- Buttons -->
+                <div class="flex justify-center space-x-4 mb-12">
+                    <a href="https://github.com/janbeyatii/" class="button button-filled flex items-center space-x-2">
+                        <span>GitHub</span>
+                        <i data-lucide="github" class="w-5 h-5"></i>
+                    </a>
+                    <a href="mailto:janbeyati.9@gmail.com" class="button button-outlined flex items-center space-x-2">
+                        <span>Contact Me</span>
+                        <i data-lucide="mail" class="w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Add the chevron-down icon -->
+            <div class="chevron-down">
+                <i data-lucide="chevron-down" class="w-8 h-8"></i>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="section py-20 bg-gray-100 dark:bg-gray-900">
+            <div class="container mx-auto px-4">
+                <h1 class="text-3xl font-bold mb-8 text-center font-space-mono">About Me</h1>
+                <div class="flex flex-col md:flex-row items-center md:items-start justify-center space-y-8 md:space-y-0 md:space-x-12">
+                    <div class="squircle bg-gray-300 dark:bg-gray-700 flex-shrink-0">
+                        <img src="assets/dp.jpeg" alt="Jan Beyati" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="max-w-2xl text-center md:text-left">
+                        <p class="about-text font-space-mono">
+                            Hi there! I'm a 4th year Software Engineering student at Carleton Universirty. Experienced with the .NET platform using C# as a backend devleloper with Barracuda Networks among many other technologies. I have a passion for learning new technologies and building software that can help people. I am also a huge fan of open-source software and I love contributing to the community, always looking for new opportunities to learn and grow as an engineer!
+                        </p>
+                        <br>
+                        <p class="about-text font-space-mono">
+                            Besides that life, you'll catch me tinkering with cars, designing and building construction projects and playing sports!
+                        </p>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section py-16">
+            <div class="container mx-auto px-8 sm:px-16">
+                <h2 class="text-3xl font-bold mb-16 text-center font-space-mono">Experience With</h2>
+                <div class="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-12 place-items-center">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/c.svg" alt="C" class="tech-icon">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiB2aWV3Qm94PSIwIDAgMTI4IDEyOCI+PHBhdGggZmlsbD0iY3VycmVudENvbG9yIiBkPSJtMTE3LjUgMzMuNWwuMy0uMmMtLjYtMS4xLTEuNS0yLjEtMi40LTIuNkw2Ny4xIDIuOWMtLjgtLjUtMS45LS43LTMuMS0uN3MtMi4zLjMtMy4xLjdsLTQ4IDI3LjljLTEuNyAxLTIuOSAzLjUtMi45IDUuNHY1NS43YzAgMS4xLjIgMi4zLjkgMy40bC0uMi4xYy41LjggMS4yIDEuNSAxLjkgMS45bDQ4LjIgMjcuOWMuOC41IDEuOS43IDMuMS43czIuMy0uMyAzLjEtLjdsNDgtMjcuOWMxLjctMSAyLjktMy41IDIuOS01LjRWMzYuMWMuMS0uOCAwLTEuNy0uNC0yLjZtLTUzLjUgNzBjLTIxLjggMC0zOS41LTE3LjctMzkuNS0zOS41UzQyLjIgMjQuNSA2NCAyNC41YzE0LjcgMCAyNy41IDguMSAzNC4zIDIwbC0xMyA3LjVDODEuMSA0NC41IDczLjEgMzkuNSA2NCAzOS41Yy0xMy41IDAtMjQuNSAxMS0yNC41IDI0LjVzMTEgMjQuNSAyNC41IDI0LjVjOS4xIDAgMTcuMS01IDIxLjMtMTIuNGwxMi45IDcuNmMtNi44IDExLjgtMTkuNiAxOS44LTM0LjIgMTkuOE0xMTUgNjJoLTMuMmwtLjkgNGg0LjF2NWgtNWwtMS4yIDZoLTQuOWwxLjItNmgtMy44bC0xLjIgNmgtNC44bDEuMi02SDk0di01aDMuNWwuOS00SDk0di01aDUuM2wxLjItNmg0LjlsLTEuMiA2aDMuOGwxLjItNmg0LjhsLTEuMiA2aDIuMnptLTEyLjcgNGgzLjhsLjktNGgtMy44eiIvPjwvc3ZnPg==" alt="Java" class="tech-icon">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48ZyBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNSIgY29sb3I9ImN1cnJlbnRDb2xvciI+PHBhdGggZD0iTTYuMTc1IDEwLjMzM2MtMS4yMDguNDA4LTEuOTU1Ljk3LTEuOTU1IDEuNTkzYzAgLjg0OCAxLjM4OSAxLjU4NyAzLjQ0IDEuOTdtMCAwYy0uNzYyLjM4Ni0xLjIxNy44NzUtMS4yMTcgMS40MDhjMCAxLjI0MyAyLjQ4NyAyLjI1MSA1LjU1NSAyLjI1MWExMyAxMyAwIDAgMCAyLjIyMy0uMTg3bS02LjU2LTMuNDcxYTE4IDE4IDAgMCAwIDMuMjI2LjI4YzEuNzA4IDAgMy4yNjUtLjIxNiA0LjQ0NS0uNTczbTEuMTEtMy40OGMtMS40MTEuNDE3LTMuMzc5LjY3Ni01LjU1NS42NzZjLTQuMjk1IDAtNy43NzgtMS4wMDgtNy43NzgtMi4yNTJjMC0uOTYgMi4wNzctMS43OCA1LTIuMTA0Ii8+PHBhdGggZD0iTTIyIDE5LjA3QzIyIDIwLjY4OCAxNy41MjMgMjIgMTIgMjJTMiAyMC42ODggMiAxOS4wN2MwLTEuMTUgMS43MDctMi4xNDYgNS0yLjYyNm0xMS43Ni03LjY1NmM0LjIxNC0xLjA5NCA0LjgxNiA1LjQ2OC0xLjIwNSA3LjY1Nk0xNy41NTggMmMtLjc0LjEyMy0yLjEzMy44MTUtMS43NzggMi41OTNjLjM1NiAxLjc3Ny0uMTQ4IDIuNzE2LS40NDQgMi45NjNNMTMuMTEzIDJjLS43NDEuMTQ4LTIuMTM0Ljk3OC0xLjc3OCAzLjExMXMtLjE0OCAyLjcwNC0uNDQ0IDMiLz48L2c+PC9zdmc+" alt="Java" class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/linux.svg" alt="Linux" class="tech-icon">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiB2aWV3Qm94PSIwIDAgMjU2IDI1NiI+PGcgZmlsbD0iY3VycmVudENvbG9yIj48cGF0aCBkPSJNMjA4IDg4aC01NlYzMloiIG9wYWNpdHk9IjAuMiIvPjxwYXRoIGQ9Ik00OCAxMjBhOCA4IDAgMCAwIDgtOFY0MGg4OHY0OGE4IDggMCAwIDAgOCA4aDQ4djE2YTggOCAwIDAgMCAxNiAwVjg4YTggOCAwIDAgMC0yLjM0LTUuNjZsLTU2LTU2QTggOCAwIDAgMCAxNTIgMjRINTZhMTYgMTYgMCAwIDAtMTYgMTZ2NzJhOCA4IDAgMCAwIDggOG0xMTItNjguNjlMMTg4LjY5IDgwSDE2MFpNMjI4IDIwOGE4IDggMCAwIDEtOCA4aC0yOGE4IDggMCAwIDEtOC04di01NmE4IDggMCAwIDEgMTYgMHY0OGgyMGE4IDggMCAwIDEgOCA4TTkxLjgyIDE5Ni4zMWEyMC44MiAyMC44MiAwIDAgMS05LjE5IDE1LjIzQzc3LjQ0IDIxNSA3MSAyMTYgNjUuMTQgMjE2QTYwLjcgNjAuNyAwIDAgMSA1MCAyMTRhOCA4IDAgMCAxIDQuMy0xNS40MWM0LjM4IDEuMiAxNC45NSAyLjcgMTkuNTUtLjM2Yy44OS0uNTkgMS44My0xLjUyIDIuMTQtMy45M2MuMzUtMi42Ny0uNzEtNC4xLTEyLjc4LTcuNTljLTkuMzUtMi43LTI1LTcuMjMtMjMtMjMuMTFhMjAuNTUgMjAuNTUgMCAwIDEgOS0xNC45NWMxMS44NC04IDMwLjcyLTMuMzEgMzIuODMtMi43NmE4IDggMCAwIDEtNC4wOCAxNS40OGMtNC40OS0xLjE3LTE1LjIyLTIuNTYtMTkuODIuNTZhNC41NCA0LjU0IDAgMCAwLTIgMy42N2MtLjEyLjktLjE0IDEuMDggMS4xMiAxLjljMi4zMSAxLjQ5IDYuNDQgMi42OCAxMC40NSAzLjg0YzkuNzkgMi44MyAyNi4zNSA3LjY2IDI0LjExIDI0Ljk3bTcxIDMuMjNBMzkuMDUgMzkuMDUgMCAwIDAgMTY4IDE4MGMwLTE5Ljg1LTE0LjM1LTM2LTMyLTM2cy0zMiAxNi4xNS0zMiAzNnMxNC4zNSAzNiAzMiAzNmEyOS4yIDI5LjIgMCAwIDAgMTUuOS00Ljc4bDIuNDQgMi40NGE4IDggMCAwIDAgMTEuMzEtMTEuMzJaTTEzNiAyMDBjLTguODIgMC0xNi05LTE2LTIwczcuMTgtMjAgMTYtMjBzMTYgOSAxNiAyMGEyNC40IDI0LjQgMCAwIDEtMS4xOCA3LjUxbC0xLjE3LTEuMTdhOCA4IDAgMSAwLTExLjMxIDExLjMybDEuNjggMS42N2ExMyAxMyAwIDAgMS00LjAyLjY3Ii8+PC9nPjwvc3ZnPg==" alt="SQL" class="tech-icon">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik0xMiAyQTEwIDEwIDAgMCAwIDIgMTJjMCA0LjQyIDIuODcgOC4xNyA2Ljg0IDkuNWMuNS4wOC42Ni0uMjMuNjYtLjV2LTEuNjljLTIuNzcuNi0zLjM2LTEuMzQtMy4zNi0xLjM0Yy0uNDYtMS4xNi0xLjExLTEuNDctMS4xMS0xLjQ3Yy0uOTEtLjYyLjA3LS42LjA3LS42YzEgLjA3IDEuNTMgMS4wMyAxLjUzIDEuMDNjLjg3IDEuNTIgMi4zNCAxLjA3IDIuOTEuODNjLjA5LS42NS4zNS0xLjA5LjYzLTEuMzRjLTIuMjItLjI1LTQuNTUtMS4xMS00LjU1LTQuOTJjMC0xLjExLjM4LTIgMS4wMy0yLjcxYy0uMS0uMjUtLjQ1LTEuMjkuMS0yLjY0YzAgMCAuODQtLjI3IDIuNzUgMS4wMmMuNzktLjIyIDEuNjUtLjMzIDIuNS0uMzNzMS43MS4xMSAyLjUuMzNjMS45MS0xLjI5IDIuNzUtMS4wMiAyLjc1LTEuMDJjLjU1IDEuMzUuMiAyLjM5LjEgMi42NGMuNjUuNzEgMS4wMyAxLjYgMS4wMyAyLjcxYzAgMy44Mi0yLjM0IDQuNjYtNC41NyA0LjkxYy4zNi4zMS42OS45Mi42OSAxLjg1VjIxYzAgLjI3LjE2LjU5LjY3LjVDMTkuMTQgMjAuMTYgMjIgMTYuNDIgMjIgMTJBMTAgMTAgMCAwIDAgMTIgMiIvPjwvc3ZnPg==" alt="github" class="tech-icon">
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation Links Section -->
+        <section id="links" class="section py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-16 text-center font-space-mono">Connect with me</h2>
+                <nav class="nav-container">
+                    <a href="https://github.com/janbeyatii" class="nav-link text-xl md:text-2xl text-gray-600 dark:text-gray-400 font-bold">
+                        <i data-lucide="github" class="w-6 h-6"></i>
+                        Github
+                    </a>
+                    <a href="./assets/Resume.pdf" class="nav-link text-xl md:text-2xl text-gray-600 dark:text-gray-400 font-bold">
+                        <i data-lucide="file-text" class="w-6 h-6"></i>
+                        Resume
+                    </a>
+                    <a href="https://www.linkedin.com/in/jan-b-970775213/" class="nav-link text-xl md:text-2xl text-gray-600 dark:text-gray-400 font-bold">
+                        <i data-lucide="linkedin" class="w-6 h-6"></i>
+                        LinkedIn
+                    </a>
+                    <a href="https://instagram.com/beyattii" class="nav-link text-xl md:text-2xl text-gray-600 dark:text-gray-400 font-bold">
+                        <i data-lucide="instagram" class="w-6 h-6"></i>
+                        Instagram
+                    </a>
+                    <a href="mailto:janbeyati.9@gmail.com" class="nav-link text-xl md:text-2xl text-gray-600 dark:text-gray-400 font-bold">
+                        <i data-lucide="mail" class="w-6 h-6"></i>
+                        Contact
+                    </a>
+                </nav>
+            </div>
+        </section>
+       
+        <!-- Projects Section -->
+        <section id="projects" class="section py-20 bg-gray-100 dark:bg-gray-900">
+            <div class="container mx-auto px-4 max-w-6xl projects-container">
+                <h2 class="text-3xl font-bold mb-12 text-center font-space-mono">Projects</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project tiles will be dynamically inserted here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="w-full py-4 border-t border-gray-300 dark:border-gray-700">
+        <p class="text-center font-space-mono text-sm uppercase cursor-pointer footer-text" onclick="rickRoll()">
+            CLICK HERE TO GET OUT OF THE MATRIX
+        </p>
+    </footer>
+</body>
+</html>
