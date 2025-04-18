@@ -17,10 +17,10 @@ lucide.createIcons();
 // Project Data
 const projects = [
     {
-        title: "In Progress",
-        description: "https://github.com/janbeyatii",
-        url: "",
-        image: ""
+        title: "Dancin' Conga",
+        description: "Fun little animation dancing to a catchy tune. Deployed via Netlify.",
+        url: "https://beyati.netlify.app/",
+        image: "./assets/conga.png"
     }
 
     // {
@@ -114,10 +114,6 @@ function createProjectTiles() {
         projectsContainer.appendChild(tile);
     });
     lucide.createIcons();
-}
-
-function rickRoll() {
-    window.open("https://www.youtube.com/watch?v=xvFZjo5PgG0", "_blank");
 }
 
 // Event Listeners
