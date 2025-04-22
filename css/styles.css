@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=EB+Garamond:ital@0;1&family=Space+Mono&display=swap');
-
+main {
+    padding-top: 4.5rem; /* adjust if navbar height changes */
+}
 
 /* Base Styles */
 body {
@@ -16,6 +18,8 @@ body {
     background-color: #0a0a0a;
     color: #ffffff;
 }
+
+
 
 /* Typography */
 .text-shadow-glow-subtle {
@@ -145,6 +149,11 @@ body {
     height: 2rem;
 }
 
+.animate-gradient {
+    background-size: 200% 200%;
+    animation: gradientShift 15s ease infinite;
+}
+
 /* Other Components */
 .section {
     opacity: 0;
@@ -172,6 +181,42 @@ body {
     transform: translateX(-50%);
     animation: bounce 2s infinite;
 }
+
+.project-tile {
+    background-color: #111; /* Make it pop against black background */
+    border: 2px solid #a8ff00; /* Lime green border */
+    border-radius: 12px;
+    padding: 1rem;
+    transition: all 0.3s ease;
+}
+
+.project-tile:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px #a8ff00aa;
+    border-color: #a8ff00;
+}
+
+
+/* Work & Education Tag Badges */
+#work-education .rounded-full {
+    font-weight: 600;
+}
+
+#work-education .shadow-md {
+    border: 2px solid #a8ff00; /* Lime green border */
+}
+
+#work-education .shadow-md:hover {
+    background-color: #111; /* Make it pop against black background */
+    border: 2px solid #a8ff00; /* Lime green border */
+    outline-offset: 2px;
+    cursor: pointer;
+    transform: scale(1.03);
+    box-shadow: 0 0 20px #a8ff00aa;
+    border-color: #a8ff00;
+    transition: all 0.3s ease;
+}
+
 
 /* Animations */
 @keyframes bounce {
